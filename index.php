@@ -1,13 +1,13 @@
 <?php 
 // connect database : kết nối với dtb
-// $conn = mysqli_connect('localhost', 'shaun', 'text123', 'ninja_pizza');
+$conn = mysqli_connect('localhost', 'shaun', 'text123', 'ninja_pizza');
 // check connection: kiểm tra kết nối 
-// if(!$conn) {
-	// 	echo 'Connection error: ' .mysqli_connect_error();
-	// }
+if(!$conn) {
+		echo 'Connection error: ' .mysqli_connect_error();
+	}
 	error_reporting(E_ALL);
 	ini_set("display_errors", 1);
-	
+
 	include('config/db_connect.php');
 // write query for all pizzas: Lựa chọn 1 hoặc nhiều hoặc tất cả các chỉ mục để lấy ra từ dtb, 
 // theo thứ tự thời gian lúc tạo ra dữ liệu đó (create-at)
