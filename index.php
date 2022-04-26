@@ -9,7 +9,7 @@ if(!$conn) {
 	}
 	
 // import file 
-	include('config/db_connect.php');
+	// include('config/db_connect.php');
 // write query for all pizzas: Lựa chọn 1 hoặc nhiều hoặc tất cả các chỉ mục để lấy ra từ dtb, 
 // theo thứ tự thời gian lúc tạo ra dữ liệu đó (create-at)
 	$sql = 'SELECT title, ingredients, id FROM pizzas ORDER BY created_at';
